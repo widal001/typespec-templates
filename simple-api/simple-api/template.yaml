@@ -1,0 +1,7 @@
+name: simple-api
+description: A simple TypeSpec API template with a basic greeting endpoint
+files:
+  - source: main.tsp
+    target: main.tsp
+  - source: tspconfig.yaml
+    target: tspconfig.yaml
