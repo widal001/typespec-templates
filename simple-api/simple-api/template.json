@@ -1,0 +1,13 @@
+{
+  "simple-api": {
+    "title": "Simple TypeSpec API Project",
+    "description": "A simple TypeSpec API template with a basic greeting endpoint",
+    "compilerVersion": "0.63.0",
+    "libraries": ["@typespec/http", "@typespec/rest", "@typespec/openapi"],
+    "config": {},
+    "files": [
+      { "path": "main.tsp", "destination": "main.tsp" },
+      { "path": "tspconfig.yaml", "destination": "tspconfig.yaml" }
+    ]
+  }
+}
