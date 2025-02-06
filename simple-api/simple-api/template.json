@@ -1,13 +1,20 @@
 {
-  "simple-api": {
-    "title": "Simple TypeSpec API Project",
-    "description": "A simple TypeSpec API template with a basic greeting endpoint",
+  "common-grants-sample": {
+    "title": "Sample Common Grants API",
+    "description": "A template for defining a Common Grants API specification",
     "compilerVersion": "0.63.0",
-    "libraries": ["@typespec/http", "@typespec/rest", "@typespec/openapi"],
+    "libraries": [
+      "@typespec/http",
+      "@typespec/rest",
+      "@typespec/openapi",
+      "@common-grants/core"
+    ],
     "config": {},
     "files": [
+      { "path": "tspconfig.yaml", "destination": "tspconfig.yaml" },
       { "path": "main.tsp", "destination": "main.tsp" },
-      { "path": "tspconfig.yaml", "destination": "tspconfig.yaml" }
+      { "path": "routes.tsp", "destination": "routes.tsp" },
+      { "path": "models.tsp", "destination": "models.tsp" }
     ]
   }
 }

@@ -1,11 +1,12 @@
-import "typespec/http";
+// main.tsp
 
-@service({title: "MyAPI"})
-namespace MyAPI;
+import "@typespec/http";
 
-model Greeting {
-  message: string;
-}
+import "./routes.tsp"; // Import the routes from above
 
-@route("/hello")
-op sayHello(): Greeting; 
+using TypeSpec.Http;
+
+@service({
+  title: "Custom API",
+})
+namespace CustomAPI;
