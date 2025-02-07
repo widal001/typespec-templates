@@ -1,6 +1,7 @@
 // main.tsp
 
 import "@typespec/http";
+import "@common-grants/core";
 
 using TypeSpec.Http;
 
@@ -13,7 +14,7 @@ namespace {{parameters.namespace}};
 @tag("Opportunities")
 @route("/opportunities")
 namespace Routes {
-  alias OpportunitiesRouter = Opportunities;
+  alias OpportunitiesRouter = CommonGrants.Routes.Opportunities;
 
   // Use the default model for list but custom model for read
   op list is OpportunitiesRouter.list;

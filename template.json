@@ -20,26 +20,6 @@
       "namespace": {
         "type": "text",
         "description": "Namespace for the API in PascalCase"
-      },
-      "fieldNameDisplay": {
-        "type": "text",
-        "description": "Human readable display name for the custom field"
-      },
-      "fieldName": {
-        "type": "text",
-        "description": "Name of the custom field in PascalCase"
-      },
-      "fieldTypeJSON": {
-        "type": "text",
-        "description": "Type of the custom field in JSON (e.g. string, number, boolean, object, array)"
-      },
-      "fieldTypeTSP": {
-        "type": "text",
-        "description": "Type of the custom field in TypeSpec"
-      },
-      "fieldDescription": {
-        "type": "text",
-        "description": "Description of the custom field"
       }
     }
   },
@@ -68,9 +48,33 @@
       }
     ],
     "inputs": {
+      "apiName": {
+        "type": "text",
+        "description": "Name of the API"
+      },
       "namespace": {
         "type": "text",
         "description": "Name of the API in PascalCase"
+      },
+      "fieldNameDisplay": {
+        "type": "text",
+        "description": "Human readable display name for the custom field"
+      },
+      "fieldName": {
+        "type": "text",
+        "description": "Name of the custom field in PascalCase"
+      },
+      "fieldTypeJSON": {
+        "type": "text",
+        "description": "Type of the custom field in JSON (e.g. string, number, boolean, object, array)"
+      },
+      "fieldTypeTSP": {
+        "type": "text",
+        "description": "Type of the custom field in TypeSpec"
+      },
+      "fieldDescription": {
+        "type": "text",
+        "description": "Description of the custom field"
       }
     }
   }
