@@ -10,7 +10,7 @@ using CommonGrants.Models;
 namespace {{parameters.namespace}}.Models;
 
 // Define a custom field
-model {{casing.pascalCase(parameters.fieldName)}} extends CustomField {
+model {{casing.pascalCase("Hello world")}} extends CustomField {
   name: "{{parameters.fieldName}}";
   type: CustomFieldType.{{parameters.fieldTypeJSON}};
   value: {{parameters.fieldTypeTSP}};

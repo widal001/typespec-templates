@@ -54,7 +54,7 @@
       },
       "namespace": {
         "type": "text",
-        "description": "Name of the API in PascalCase"
+        "description": "Namespace for the API in PascalCase"
       },
       "fieldName": {
         "type": "text",
