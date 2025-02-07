@@ -10,8 +10,8 @@ using CommonGrants.Models;
 namespace {{parameters.namespace}}.Models;
 
 // Define a custom field
-model {{casing.pascalCase("Hello world")}} extends CustomField {
-  name: "{{parameters.fieldName}}";
+model {{parameters.fieldNamePascal}} extends CustomField {
+  name: "{{parameters.fieldNameDisplay}}";
   type: CustomFieldType.{{parameters.fieldTypeJSON}};
   value: {{parameters.fieldTypeTSP}};
   description: "{{parameters.fieldDescription}}";
@@ -22,6 +22,6 @@ model CustomOpportunity extends Opportunity.OpportunityBase {
 
   // Add an example of the new customFields object using `@example()`
   customFields: {
-    {{casing.camelCase(parameters.fieldName)}}: {{casing.pascalCase(parameters.fieldName)}};
+    {{parameters.fieldNamePascal}}: {{parameters.fieldNamePascal}};
   };
 }
