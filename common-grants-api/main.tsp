@@ -1,12 +1,12 @@
 // main.tsp
 
-import "@typespec/http";
-import "@common-grants/core";
+import "@typespec/http"; // Foo
+import "@common-grants/core"; // Foo
 
 using TypeSpec.Http;
 
 @service({
-  title: "{{parameters.namespace}}",
+  title: "{{parameters.apiName}}",
 })
 namespace {{parameters.namespace}};
 
