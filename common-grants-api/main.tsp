@@ -1,7 +1,7 @@
 // main.tsp
 
-import "@typespec/http"; // Foo
-import "@common-grants/core"; // Foo
+import "@typespec/http";
+import "@common-grants/core";
 
 using TypeSpec.Http;
 

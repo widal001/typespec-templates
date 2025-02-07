@@ -56,13 +56,9 @@
         "type": "text",
         "description": "Name of the API in PascalCase"
       },
-      "fieldNameDisplay": {
-        "type": "text",
-        "description": "Human readable display name for the custom field"
-      },
       "fieldName": {
         "type": "text",
-        "description": "Name of the custom field in PascalCase"
+        "description": "Human readable display name for the custom field"
       },
       "fieldTypeJSON": {
         "type": "text",
