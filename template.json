@@ -1,0 +1,77 @@
+{
+  "common-grants-api": {
+    "title": "CommonGrants API spec",
+    "description": "Define a Custom API spec with default routes from the CommonGrants library",
+    "compilerVersion": "0.63.0",
+    "libraries": ["@common-grants/core"],
+    "config": {},
+    "files": [
+      {
+        "path": "./common-grants-api/tspconfig.yaml",
+        "destination": "tspconfig.yaml"
+      },
+      { "path": "./common-grants-api/main.tsp", "destination": "main.tsp" }
+    ],
+    "inputs": {
+      "apiName": {
+        "type": "text",
+        "description": "Name of the API"
+      },
+      "namespace": {
+        "type": "text",
+        "description": "Namespace for the API in PascalCase"
+      },
+      "fieldNameDisplay": {
+        "type": "text",
+        "description": "Human readable display name for the custom field"
+      },
+      "fieldName": {
+        "type": "text",
+        "description": "Name of the custom field in PascalCase"
+      },
+      "fieldTypeJSON": {
+        "type": "text",
+        "description": "Type of the custom field in JSON (e.g. string, number, boolean, object, array)"
+      },
+      "fieldTypeTSP": {
+        "type": "text",
+        "description": "Type of the custom field in TypeSpec"
+      },
+      "fieldDescription": {
+        "type": "text",
+        "description": "Description of the custom field"
+      }
+    }
+  },
+  "api-with-custom-fields": {
+    "title": "CommonGrants API spec with custom fields",
+    "description": "Define a CommonGrants API spec with custom fields",
+    "compilerVersion": "0.63.0",
+    "libraries": ["@common-grants/core"],
+    "config": {},
+    "files": [
+      {
+        "path": "./api-with-custom-fields/tspconfig.yaml",
+        "destination": "tspconfig.yaml"
+      },
+      {
+        "path": "./api-with-custom-fields/main.tsp",
+        "destination": "main.tsp"
+      },
+      {
+        "path": "./api-with-custom-fields/routes.tsp",
+        "destination": "routes.tsp"
+      },
+      {
+        "path": "./api-with-custom-fields/models.tsp",
+        "destination": "models.tsp"
+      }
+    ],
+    "inputs": {
+      "namespace": {
+        "type": "text",
+        "description": "Name of the API in PascalCase"
+      }
+    }
+  }
+}
