@@ -4,7 +4,7 @@ using TypeSpec.Http;
 
 @tag("Opportunities")
 @route("/opportunities")
-namespace Routes {
+namespace Quickstart.Routes {
   alias OpportunitiesRouter = CommonGrants.Routes.Opportunities;
 
   op list is OpportunitiesRouter.list;
